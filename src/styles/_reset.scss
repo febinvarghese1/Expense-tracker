@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+
+@mixin flexContent($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+
+}

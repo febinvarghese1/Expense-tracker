@@ -1,0 +1,35 @@
+@use "./reset" as reset;
+
+.header {
+    position: relative;
+    &__heading {
+    @include reset.flexContent(space-between);
+    padding: 10px 20px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+    & h2 {
+      font-weight: 200;
+    }
+  }
+
+  &__sidebar{
+    position: absolute;
+    left: 0;
+
+
+    transform: translateX(-100%);
+    &_list{
+        width: 30vw;
+        height: 100vh;
+        background-color: blanchedalmond;
+        padding:20px;
+        text-align: center;
+        &--item{
+            list-style:none;
+            margin-top: 20px;
+            font-size: 1.2rem;
+
+        }
+    }
+  }
+
+}
